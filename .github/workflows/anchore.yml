@@ -3,7 +3,7 @@ name: Docker Security Scan
 on:
   push:
     branches:
-      - automate-issue-creation
+      - testing
 
 jobs:
   build:
@@ -118,20 +118,6 @@ jobs:
 
     - name: Raise issue
       id: raise_issue
-      uses: sharmaamitt16/create-an-issue@v2.1.0
+      uses: sharmaamitt16/create-an-issue@v2.1.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    # read vulnerabilities.json file
-    # - name: Anchore scan JSON results
-    #   run: ./scripts/anchore.sh
-
-
-  #   outputs:
-  #     output_debian: ${{ steps.scan_debian.outputs.vulnerabilities }}
-  #     output_apache: ${{ steps.scan_apache.outputs.vulnerabilities }}
-  #     output_php: ${{ steps.scan_php.outputs.vulnerabilities }}
-  #     output_php_cli: ${{ steps.scan_php_cli.outputs.vulnerabilities }}
-  #     output_php_dev: ${{ steps.scan_php_dev.outputs.vulnerabilities }}
-  #     output_php_fpm: ${{ steps.scan_php_fpm.outputs.vulnerabilities }}
-  #     output_php_fpm_apache: ${{ steps.scan_php_fpm_apache.outputs.vulnerabilities }}
