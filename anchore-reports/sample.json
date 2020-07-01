@@ -1,0 +1,56 @@
+{
+  "imageDigest": "digest1",
+  "vulnerabilities": [
+      {
+          "feed": "vulnerabilities",
+          "feed_group": "debian:10",
+          "fix": "None",
+          "nvd_data": [],
+          "package": "apache2-bin-2.4.38-3+deb10u3",
+          "package_cpe": "None",
+          "package_cpe23": "None",
+          "package_name": "apache2-bin",
+          "package_path": "pkgdb",
+          "package_type": "dpkg",
+          "package_version": "2.4.38-3+deb10u3",
+          "severity": "Negligible",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2001-1534",
+          "vendor_data": [],
+          "vuln": "CVE-2001-1534"
+      },
+      {
+        "feed": "vulnerabilities",
+        "feed_group": "debian:10",
+        "fix": "4.4.4.4.xffh",
+        "nvd_data": [],
+        "package": "apache2-bin-2.4.38-3+deb10u3",
+        "package_cpe": "None",
+        "package_cpe23": "None",
+        "package_name": "apache2-bin",
+        "package_path": "pkgdb",
+        "package_type": "dpkg",
+        "package_version": "2.4.38-3+deb10u3",
+        "severity": "high",
+        "url": "https://security-tracker.debian.org/tracker/CVE-2001-1534",
+        "vendor_data": [],
+        "vuln": "CVE-2001-1534"
+      },
+      {
+        "feed": "vulnerabilities",
+        "feed_group": "debian:10",
+        "fix": "None",
+        "nvd_data": [],
+        "package": "apache2-bin-2.4.38-3+deb10u3",
+        "package_cpe": "None",
+        "package_cpe23": "None",
+        "package_name": "apache2-bin",
+        "package_path": "pkgdb",
+        "package_type": "dpkg",
+        "package_version": "2.4.38-3+deb10u3",
+        "severity": "Negligible",
+        "url": "https://security-tracker.debian.org/tracker/CVE-2001-1534",
+        "vendor_data": [],
+        "vuln": "CVE-2001-1534"
+    }
+  ]
+}

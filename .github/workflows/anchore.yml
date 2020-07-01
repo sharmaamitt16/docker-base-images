@@ -116,8 +116,11 @@ jobs:
     - name: Rename file
       run: mv ./anchore-reports/vulnerabilities.json ./anchore-reports/scan_php-dev.json
 
+    - name: Rename file
+      run: mv ./anchore-reports/sample.json ./anchore-reports/scan_php-cli.json
+
     - name: Raise issue
       id: raise_issue
-      uses: sharmaamitt16/create-an-issue@v2.5.2
+      uses: sharmaamitt16/create-an-issue@v2.1.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
