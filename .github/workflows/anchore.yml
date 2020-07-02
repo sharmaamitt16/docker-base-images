@@ -122,7 +122,7 @@ jobs:
     # create issue
     - name: Raise issue
       id: raise_issue_php_dev
-      uses: WSMathias/create-an-issue-anchore@v1
+      uses: sharmaamitt16/create-an-issue@v2.0.3
       with:
         reportFilesPattern: ./anchore-reports/scan_*
       env:
