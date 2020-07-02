@@ -30,7 +30,7 @@
         "package_path": "pkgdb",
         "package_type": "dpkg",
         "package_version": "2.4.38-3+deb10u3",
-        "severity": "high",
+        "severity": "High",
         "url": "https://security-tracker.debian.org/tracker/CVE-2001-1534",
         "vendor_data": [],
         "vuln": "CVE-2001-1534"

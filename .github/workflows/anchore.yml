@@ -114,15 +114,15 @@ jobs:
     #     fail-build: false
     #     acs-report-enable: true
     - name: Rename file
-      run: mv ./anchore-reports/vulnerabilities.json ./anchore-reports/scan_php-dev.json
+      run: mv ./anchore-reports/vulnerabilities.json ./anchore-reports/scan_debian_php-dev.json
 
     - name: Rename file
-      run: mv ./anchore-reports/sample.json ./anchore-reports/scan_php-cli.json
+      run: mv ./anchore-reports/sample.json ./anchore-reports/scan_debian_php-cli.json
 
     # create issue
     - name: Raise issue
       id: raise_issue
-      uses: sharmaamitt16/create-an-issue@v2.0.4
+      uses: sharmaamitt16/create-an-issue@v2.0.6
       with:
         reportFilesPattern: ./anchore-reports/scan_*
       env:
